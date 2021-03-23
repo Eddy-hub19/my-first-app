@@ -1,139 +1,26 @@
-import logo from "./logo.svg";
+import React, { Component } from "react";
 import "./App.css";
-import User from "./components/user/User";
+import PictureComponent from "./components/PictureComponent";
 
-/*JSX*/
-function App() {
-  let users = [
-    {
-      name: "vasya",
-      age: 31,
-      status: false,
-      address: {
-        city: "Lviv",
-        country: "Ukraine",
-        street: "Shevchenko",
-        houseNumber: 1,
-      },
-    },
-    {
-      name: "petya",
-      age: 30,
-      status: true,
-      address: {
-        city: "New York",
-        country: "USA",
-        street: "East str",
-        houseNumber: 21,
-      },
-    },
-    {
-      name: "kolya",
-      age: 29,
-      status: true,
-      address: {
-        city: "Budapest",
-        country: "Hungary",
-        street: "Kuraku",
-        houseNumber: 78,
-      },
-    },
-    {
-      name: "olya",
-      age: 28,
-      status: false,
-      address: {
-        city: "Prague",
-        country: "Czech",
-        street: "Paster",
-        houseNumber: 56,
-      },
-    },
-    {
-      name: "max",
-      age: 30,
-      status: true,
-      address: {
-        city: "Istanbul",
-        country: "Turkey",
-        street: "Mikar",
-        houseNumber: 39,
-      },
-    },
-    {
-      name: "anya",
-      age: 31,
-      status: false,
-      address: {
-        city: "Rio",
-        country: "Brasil",
-        street: "Ronaldi",
-        houseNumber: 5,
-      },
-    },
-    {
-      name: "oleg",
-      age: 28,
-      status: false,
-      address: {
-        city: "Montreal",
-        country: "Canada",
-        street: "Acusto",
-        houseNumber: 90,
-      },
-    },
-    {
-      name: "andrey",
-      age: 29,
-      status: true,
-      address: {
-        city: "Quebeck",
-        country: "Canada",
-        street: "Binaro",
-        houseNumber: 33,
-      },
-    },
-    {
-      name: "masha",
-      age: 30,
-      status: true,
-      address: {
-        city: "Moscow",
-        country: "Russia",
-        street: "Gogolia",
-        houseNumber: 1,
-      },
-    },
-    {
-      name: "olya",
-      age: 31,
-      status: false,
-      address: {
-        city: "Portland",
-        country: "USA",
-        street: "Forest str",
-        houseNumber: 4,
-      },
-    },
-    {
-      name: "max",
-      age: 31,
-      status: true,
-      address: {
-        city: "Cairo",
-        country: "Egypt",
-        street: "Seashore",
-        houseNumber: 45,
-      },
-    },
-  ];
+let data = [
+  { msg: "okten hello", iUrl: "https://cutt.ly/hxnF2Dd" },
+  { txt: "super" },
+  { msg: "okten hi", iUrl: "https://cutt.ly/hxnDnrm" },
+  { msg: "okten holla", iUrl: "https://cutt.ly/hxnF2Dd" },
+  { txt: "Olef", iUrl: "https://cutt.ly/hxnDnrm" },
+];
 
-  //треба добавляти ключ,якщо хочеш,щоб реакт міняв тільки одне значення
-  return (
-    <div>
-      {users.map((value,index) => (<User user={value} key={index} />))} 
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {data.map((value) => (
+          // <PictureComponent msg={value.msg} iUrl={value.iUrl} />
+          <PictureComponent {...value} />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default App;
