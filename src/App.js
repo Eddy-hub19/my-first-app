@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from "./components/header/Header";
 import PictureComponent from "./components/PictureComponent";
 
 let data = [
@@ -14,8 +15,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header/>
         {data.map((value) => (
-          // <PictureComponent msg={value.msg} iUrl={value.iUrl} />
+          // <PictureComponent msg={value.msg} iUrl={value.iUrl} /> // можна використовувати і цей спосіб
           <PictureComponent {...value} />
         ))}
       </div>
