@@ -1,0 +1,7 @@
+.btn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  position: relative;
+  left: 200px;
+}

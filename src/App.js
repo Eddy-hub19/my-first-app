@@ -1,28 +1,20 @@
-import React, { Component } from "react";
-import "./App.css";
-import Header from "./components/header/Header";
-import PictureComponent from "./components/PictureComponent";
+import React from 'react';
+import { Button } from './components/Product/buttons/Button/Button';
+import { ProductItem } from "./components/Product/Card";
 
-let data = [
-  { msg: "okten hello", iUrl: "https://cutt.ly/hxnF2Dd" },
-  { txt: "super" },
-  { msg: "okten hi", iUrl: "https://cutt.ly/hxnDnrm" },
-  { msg: "okten holla", iUrl: "https://cutt.ly/hxnF2Dd" },
-  { txt: "Olef", iUrl: "https://cutt.ly/hxnDnrm" },
-];
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header/>
-        {data.map((value) => (
-          // <PictureComponent msg={value.msg} iUrl={value.iUrl} /> // можна використовувати і цей спосіб
-          <PictureComponent {...value} />
-        ))}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Button/>
+      <ProductItem text="ITEM" name="Tea" cost="$10" />
+      <Button/>
+      <ProductItem text="ITEM" name="Tea" cost="$25" />
+      <Button/>
+      <ProductItem text="ITEM" name="Tea" cost="$21" />
+      <Button/>
+      <ProductItem text="ITEM" name="Tea" cost="$15" />
+    </div>
+  );
 }
 
 export default App;
