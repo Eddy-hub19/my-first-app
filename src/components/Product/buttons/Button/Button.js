@@ -1,10 +1,10 @@
 import React from 'react';
 import './Button.css'
 
-export const Button = (prop) => {
+export const Button = () => {
     return (
       <div className="btn">
-        <button> BUY </button>
+        <button onClick={console.log('click')}> BUY </button>
       </div>
     );
   };

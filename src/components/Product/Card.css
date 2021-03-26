@@ -1,27 +1,24 @@
 .App {
   display: flex;
-  justify-content: center;
-  flex-direction:row;
   margin-top: 7%;
 }
 
 .card {
   flex-direction: row-reverse;
-  width: 300px;
+  width: 250px;
   background: lightslategray;
   border-radius: 25px;
   border: 1px solid darkblue;
   padding: 20px;
-  margin: 20px;
   text-align: center;
 }
 div > h3 {
   color: khaki;
-  font-size: 30px;
+  font-size: 40px;
 }
 div > h2 {
   color: black;
-  font-size: 50px;
+  font-size: 40px;
 }
 div > h1 {
   color: lightseagreen;

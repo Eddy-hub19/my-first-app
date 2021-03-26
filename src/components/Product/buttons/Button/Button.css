@@ -3,5 +3,11 @@
   flex-direction: column-reverse;
   justify-content: flex-start;
   position: relative;
-  left: 200px;
+  bottom: 20px;
+  left: 270px;
+}
+button {
+    width: 250px;
+    height: 35px;
+    background:rgb(231, 213, 154);
 }
