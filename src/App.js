@@ -1,17 +1,18 @@
-import React from 'react';
-import { Button } from './components/Product/buttons/Button/Button';
+import "./logo.svg";
+import React from "react";
+import { Button } from "./components/Product/buttons/Button/Button";
 import { ProductItem } from "./components/Product/Card";
 
 function App() {
   return (
     <div className="App">
-      <Button/>
+      <Button />
       <ProductItem text="ITEM" name="Tea" cost="$10" />
-      <Button/>
+      <Button />
       <ProductItem text="ITEM" name="Tea" cost="$25" />
-      <Button/>
+      <Button />
       <ProductItem text="ITEM" name="Tea" cost="$21" />
-      <Button/>
+      <Button />
       <ProductItem text="ITEM" name="Tea" cost="$15" />
     </div>
   );
